@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-9" viewBox="0 0 40 41">
+    <path d="M25.25 32.2c-2.417 1.307-5.184 2.05-8.126 2.05C7.667 34.25 0 26.58 0 17.123 0 7.667 7.667 0 17.124 0 26.582 0 34.25 7.667 34.25 17.124c0 3.277-.92 6.338-2.517 8.94.29.18.563.397.814.65l6.105 6.103c1.8 1.8 1.795 4.722 0 6.52-1.8 1.8-4.72 1.798-6.52 0l-6.104-6.105c-.314-.313-.572-.66-.777-1.03zm-8.126-4.116c6.053 0 10.96-4.907 10.96-10.96 0-6.052-4.907-10.96-10.96-10.96-6.052 0-10.96 4.908-10.96 10.96 0 6.053 4.908 10.96 10.96 10.96z"
+    fill-rule="evenodd" />
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+    <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+  </symbol>
+</svg>
+
+<form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+  <div role="search" class="sbx-custom__wrapper">
+    <input type="search" name="search" placeholder="Que cherchez-vous ?" autocomplete="off" required="required" class="sbx-custom__input">
+    <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+      <svg role="img" aria-label="Search">
+        <use xlink:href="#sbx-icon-search-9"></use>
+      </svg>
+    </button>
+    <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+      <svg role="img" aria-label="Reset">
+        <use xlink:href="#sbx-icon-clear-3"></use>
+      </svg>
+    </button>
+  </div>
+</form>
+<script type="text/javascript">
+  document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
+</script></body>
+</html>
