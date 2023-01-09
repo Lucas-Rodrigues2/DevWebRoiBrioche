@@ -1,0 +1,22 @@
+<a href="#" class="myButton">Ecrire un commentaire</a>
+
+.myButton {
+	background-color:#c7c5c7;
+	border-radius:28px;
+	border:1px solid #c7c5c7;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 19px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

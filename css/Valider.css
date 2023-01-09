@@ -1,0 +1,21 @@
+<a href="#" class="myButton">Valider</a>
+
+.myButton {
+	background-color:#ed7ba5;
+	border-radius:28px;
+	border:1px solid #ed7ba5;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:18px 59px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#ed7ba5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
